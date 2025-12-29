@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Menglin (Miley) Liu</title>
     <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+
         nav ul {
             list-style-type: none;
             padding: 0;
@@ -26,6 +35,115 @@
         nav ul li a:hover {
             color: #3498db;
         }
+
+        h1 {
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #2980b9;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        h3 {
+            margin-bottom: 5px;
+            color: #444;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .contact-info a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .job-date {
+            color: #666;
+            font-style: italic;
+        }
+
+        .job-org {
+            color: #555;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .project-title {
+            font-weight: bold;
+        }
+
+        .project-tech {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        ul {
+            margin-top: 5px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .summary {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .skills-section {
+            display: grid;
+            grid-template-columns: 180px 1fr;
+            gap: 10px;
+        }
+
+        .skill-category {
+            font-weight: bold;
+        }
+
+        .download-link {
+            background-color: #2980b9;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+
+        .download-link:hover {
+            background-color: #3498db;
+        }
     </style>
 </head>
 <body>
@@ -33,15 +151,128 @@
     <nav>
         <ul>
             <li><a href="index.html">Main Page</a></li>
-            <li><a href="cv.html">Curriculum Vitae</a></li>
+            <li><a href="CV.html">Curriculum Vitae</a></li>
             <li><a href="research.html">Research</a></li>
             <li><a href="teaching.html">Teaching</a></li>
         </ul>
     </nav>
 
-    <h1>Curriculum Vitae</h1>
-    <p>You can download my CV by clicking the link below:</p>
-    <p><a href="MenglinLiu_Resume.pdf" target="_blank">Download My CV (PDF)</a></p>
-    <!-- Add more content as needed -->
+    <h1>Menglin (Miley) Liu</h1>
+
+    <div class="contact-info">
+        Seattle, WA |
+        <a href="mailto:menglinliu@cuhk.edu.cn">menglinliu@cuhk.edu.cn</a> |
+        530-761-6139 |
+        <a href="https://menglinmileyliu.github.io/index.html">Website</a>
+    </div>
+
+    <a href="MenglinLiu_Resume.pdf" target="_blank" class="download-link">Download CV (PDF)</a>
+
+    <h2>Professional Summary</h2>
+    <div class="summary">
+        Applied research engineer and computational social scientist with Ph.D.-level training and 5+ years of experience building end-to-end NLP and survey analytics systems. Specialized in LLM-based text classification, interpretable modeling, and decision-oriented analytics for non-technical stakeholders. Strong track record translating ambiguous research and policy questions into scalable, production-ready pipelines and user-facing analytical tools.
+    </div>
+
+    <h2>Experience</h2>
+
+    <div class="job-header">
+        <span class="job-title">Assistant Professor of Computational Social Science</span>
+        <span class="job-date">2025 – Present</span>
+    </div>
+    <div class="job-org">CUHK-Shenzhen</div>
+    <ul>
+        <li>Led applied research and system development at the intersection of NLP, survey analytics, and social data.</li>
+        <li>Designed and deployed LLM-based pipelines for text and survey analysis used in active research and product prototyping.</li>
+        <li>Supervised applied research translating real-world questions into scalable analytical systems.</li>
+    </ul>
+
+    <div class="job-header">
+        <span class="job-title">Founder & Lead Research Scientist</span>
+        <span class="job-date">2025 – Present</span>
+    </div>
+    <div class="job-org">SurveyFluency</div>
+    <ul>
+        <li>Founded and led development of an AI-driven survey intelligence platform for rapid, interpretable analysis of complex survey data.</li>
+        <li>Designed system architecture supporting SPSS and longitudinal survey ingestion, demographic crosstabs, toplines, and visual analytics.</li>
+        <li>Built natural-language interfaces for structured survey exploration, enabling users to identify subgroup differences and temporal patterns without code.</li>
+        <li>Applied the platform to large-scale public datasets (e.g., General Social Survey cumulative file) to support early-stage exploratory analysis.</li>
+        <li>Focused on interpretability, transparency, and researcher-facing workflows for applied social science and policy analysis.</li>
+    </ul>
+
+    <div class="job-header">
+        <span class="job-title">Data & Policy Analyst</span>
+        <span class="job-date">June – Sept. 2023</span>
+    </div>
+    <div class="job-org">Committee of 100 (Remote)</div>
+    <ul>
+        <li>Created interactive geospatial dashboards visualizing property restriction laws and policy changes across U.S. states and cities.</li>
+        <li>Built an end-to-end data pipeline from legislative data ingestion and cleaning to mapping-ready outputs and stakeholder-ready visual deliverables.</li>
+    </ul>
+
+    <h2>Selected Applied Research Projects</h2>
+
+    <div class="project-header">
+        <span class="project-title">SurveyFluency: AI System for Survey Intelligence</span>
+        <span class="job-date">2024 – Present</span>
+    </div>
+    <div class="project-tech">LLMs, NLP, Structured Data Reasoning</div>
+    <ul>
+        <li>Developed LLM-based pipelines for analyzing structured survey data, including topline generation, demographic crosstabs, and pattern discovery.</li>
+        <li>Implemented natural-language querying over tabular survey data to support hypothesis-free exploration and rapid insight generation.</li>
+        <li>Evaluated system outputs using real-world datasets (e.g., General Social Survey) to assess robustness across survey waves and subpopulations.</li>
+        <li>Designed outputs to prioritize human interpretation, transparency, and researcher trust rather than automated decision-making.</li>
+    </ul>
+
+    <div class="project-header">
+        <span class="project-title">PoliPrompt: LLM-Based NLP Classification Toolkit</span>
+        <span class="job-date">Jun – Sep 2024</span>
+    </div>
+    <div class="project-tech">Prompt Optimization, Transformers, PyTorch, Open Source</div>
+    <ul>
+        <li>Developed a modular classification pipeline with prompt optimization and exemplar retrieval, achieving substantial accuracy gains with lower inference cost.</li>
+        <li>Integrated Hugging Face Transformers and PyTorch for scalable training and evaluation across large text corpora.</li>
+        <li>Released as an open-source PyPI package.</li>
+    </ul>
+
+    <div class="project-header">
+        <span class="project-title">LLM-Based Analysis of Survey Open-Ended Responses</span>
+        <span class="job-date">May 2025 – Present</span>
+    </div>
+    <div class="project-tech">Prompting, Topic Modeling, Interpretability</div>
+    <ul>
+        <li>Built pipelines analyzing 50,000+ open-ended responses for effort, emotion, moral content, and ideological stance using multiple prompting strategies.</li>
+        <li>Applied topic modeling and clustering to extract latent dimensions related to ambivalence, cross-pressure, and cognitive complexity.</li>
+        <li>Validated outputs against human-coded benchmarks to ensure measurement reliability and interpretability.</li>
+    </ul>
+
+    <div class="project-header">
+        <span class="project-title">Data Processing for Housing Policy Debates</span>
+        <span class="job-date">June 2025 – Present</span>
+    </div>
+    <div class="project-tech">ASR, Diarization, NLP Pipelines, CI/CD</div>
+    <ul>
+        <li>Automated transcription and speaker diarization for 500+ hours of local government meeting audio; built reproducible pipelines for extraction and analysis.</li>
+        <li>Developed CI/CD-ready processing workflows for cleaning, feature extraction, and downstream NLP tasks, reducing manual processing time substantially.</li>
+        <li>Produced structured quantitative measures of policy discourse for non-technical research partners and decision-makers.</li>
+    </ul>
+
+    <h2>Technical Skills</h2>
+    <div class="skills-section">
+        <span class="skill-category">Programming:</span>
+        <span>Python, R, SQL, Stata</span>
+
+        <span class="skill-category">NLP / ML Libraries:</span>
+        <span>Hugging Face Transformers, PyTorch, scikit-learn, SpaCy, NLTK, Gensim, TensorFlow</span>
+
+        <span class="skill-category">Data & Model Management:</span>
+        <span>DVC, Git, Weights & Biases, MLflow</span>
+
+        <span class="skill-category">Cloud / Deployment:</span>
+        <span>AWS (EC2/S3), CI/CD workflows</span>
+
+        <span class="skill-category">Other:</span>
+        <span>Causal inference, clustering, regression modeling, survey analysis</span>
+    </div>
+
 </body>
 </html>
