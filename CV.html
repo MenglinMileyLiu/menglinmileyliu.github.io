@@ -3,374 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Menglin (Miley) Liu</title>
+    <title>CV | Menglin Liu</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 40px 30px;
-            line-height: 1.7;
-            color: #2d3748;
-            background-color: #f7fafc;
-        }
-
-        nav {
-            margin-bottom: 40px;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        nav ul li {
-            display: inline-block;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #2d3748;
-            font-weight: 500;
-            font-size: 1em;
-            padding: 8px 20px;
-            background-color: #f7fafc;
-            border: 1.5px solid #cbd5e0;
-            border-radius: 8px;
-            transition: all 0.2s ease;
-            display: inline-block;
-        }
-
-        nav ul li a:hover {
-            background-color: #2b6cb0;
-            color: #ffffff;
-            border-color: #2b6cb0;
-            transform: translateY(-1px);
-        }
-
-        h1 {
-            color: #1a202c;
-            font-size: 2.5em;
-            font-weight: 700;
-            border-bottom: 3px solid #2b6cb0;
-            padding-bottom: 12px;
-            margin-bottom: 20px;
-            letter-spacing: -0.02em;
-        }
-
-        h2 {
-            color: #2b6cb0;
-            font-size: 1.6em;
-            font-weight: 600;
-            border-bottom: 2px solid #e2e8f0;
-            padding-bottom: 8px;
-            margin-top: 40px;
-            margin-bottom: 20px;
-        }
-
-        h3 {
-            margin-bottom: 8px;
-            color: #2d3748;
-            font-weight: 600;
-        }
-
-        .contact-info {
-            margin-bottom: 25px;
-            color: #4a5568;
-            font-size: 1.05em;
-            line-height: 1.8;
-        }
-
-        .contact-info a {
-            color: #2b6cb0;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.2s ease;
-        }
-
-        .contact-info a:hover {
-            color: #2c5282;
-            text-decoration: underline;
-        }
-
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            flex-wrap: wrap;
-            margin-bottom: 6px;
-        }
-
-        .job-title {
-            font-weight: 600;
-            font-size: 1.15em;
-            color: #1a202c;
-        }
-
-        .job-date {
-            color: #718096;
-            font-style: normal;
-            font-size: 0.95em;
-            font-weight: 500;
-        }
-
-        .job-org {
-            color: #4a5568;
-            font-style: italic;
-            margin-bottom: 12px;
-            font-size: 1.05em;
-        }
-
-        .project-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            flex-wrap: wrap;
-            margin-top: 25px;
-            margin-bottom: 6px;
-        }
-
-        .project-title {
-            font-weight: 600;
-            font-size: 1.1em;
-            color: #1a202c;
-        }
-
-        .project-tech {
-            color: #718096;
-            font-size: 0.9em;
-            font-weight: 500;
-        }
-
-        ul {
-            margin-top: 10px;
-            padding-left: 24px;
-        }
-
-        li {
-            margin-bottom: 10px;
-            color: #4a5568;
-            line-height: 1.7;
-        }
-
-        .summary {
-            background-color: #edf2f7;
-            padding: 24px;
-            border-radius: 8px;
-            margin-bottom: 30px;
-            border-left: 4px solid #2b6cb0;
-            color: #2d3748;
-            line-height: 1.8;
-        }
-
-        .skills-section {
-            display: grid;
-            grid-template-columns: 200px 1fr;
-            gap: 16px;
-            margin-bottom: 20px;
-        }
-
-        .skill-category {
-            font-weight: 600;
-            color: #2d3748;
-        }
-
-        .skills-section span:nth-child(even) {
-            color: #4a5568;
-        }
-
-        .download-link {
-            background-color: #2b6cb0;
-            color: white;
-            padding: 12px 28px;
-            text-decoration: none;
-            border-radius: 8px;
-            display: inline-block;
-            margin-bottom: 35px;
-            font-weight: 600;
-            transition: all 0.2s ease;
-            box-shadow: 0 2px 4px rgba(43, 108, 176, 0.2);
-        }
-
-        .download-link:hover {
-            background-color: #2c5282;
-            transform: translateY(-1px);
-            box-shadow: 0 4px 8px rgba(43, 108, 176, 0.3);
-        }
-
-        @media (max-width: 768px) {
-            body {
-                padding: 20px 15px;
-            }
-
-            h1 {
-                font-size: 2em;
-            }
-
-            h2 {
-                font-size: 1.4em;
-            }
-
-            .skills-section {
-                grid-template-columns: 1fr;
-                gap: 8px;
-            }
-
-            .skill-category {
-                margin-top: 12px;
-            }
-
-            nav ul {
-                flex-direction: column;
-            }
-
-            nav ul li a {
-                display: block;
-                width: 100%;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Main Page</a></li>
-            <li><a href="CV.html">Curriculum Vitae</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="teaching.html">Teaching</a></li>
-        </ul>
-    </nav>
 
-    <h1>Menglin (Miley) Liu</h1>
+    <!-- ========== HEADER ========== -->
+    <header class="site-header">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">Menglin<span class="dot">.</span>Liu</a>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="CV.html" class="active">CV</a></li>
+                <li><a href="Poliprompt_Package.html">PoliPrompt</a></li>
+            </ul>
+        </div>
+    </header>
 
-    <div class="contact-info">
-        Seattle, WA |
-        <a href="mailto:menglinliu@cuhk.edu.cn">menglinliu@cuhk.edu.cn</a> |
-        530-761-6139 |
-        <a href="https://menglinmileyliu.github.io/index.html">Website</a>
-    </div>
+    <!-- ========== PAGE BANNER ========== -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Curriculum Vitae</h1>
+            <p class="banner-contact">
+                <a href="mailto:menglinliu@cuhk.edu.cn">menglinliu@cuhk.edu.cn</a> &middot;
+                <a href="https://menglinmileyliu.github.io/index.html">Website</a>
+            </p>
+            <div class="banner-buttons">
+                <a href="MenglinLIU_CV.pdf" target="_blank" class="btn btn-gold">Download Academic CV</a>
+                <a href="MenglinLiu_Resume.pdf" target="_blank" class="btn btn-outline">Download Resume</a>
+            </div>
+        </div>
+    </section>
 
-    <a href="MenglinLiu_Resume.pdf" target="_blank" class="download-link">Download CV (PDF)</a>
+    <!-- ========== SUMMARY ========== -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-heading reveal">Professional Summary</h2>
+            <div class="summary-box reveal" data-delay="100">
+                Applied research engineer and computational social scientist with Ph.D.-level training and 5+ years of experience building end-to-end NLP and survey analytics systems. Specialized in LLM-based text classification, interpretable modeling, and decision-oriented analytics for non-technical stakeholders. Strong track record translating ambiguous research and policy questions into scalable, production-ready pipelines and user-facing analytical tools.
+            </div>
+        </div>
+    </section>
 
-    <h2>Professional Summary</h2>
-    <div class="summary">
-        Applied research engineer and computational social scientist with Ph.D.-level training and 5+ years of experience building end-to-end NLP and survey analytics systems. Specialized in LLM-based text classification, interpretable modeling, and decision-oriented analytics for non-technical stakeholders. Strong track record translating ambiguous research and policy questions into scalable, production-ready pipelines and user-facing analytical tools.
-    </div>
+    <!-- ========== EXPERIENCE TIMELINE ========== -->
+    <section class="section section--alt">
+        <div class="container">
+            <h2 class="section-heading reveal">Experience</h2>
 
-    <h2>Experience</h2>
+            <div class="timeline reveal" data-delay="100">
+                <div class="timeline-item">
+                    <div class="tl-header">
+                        <span class="tl-title">Assistant Professor of Computational Social Science</span>
+                        <span class="tl-date">2025 &ndash; Present</span>
+                    </div>
+                    <div class="tl-org">CUHK-Shenzhen</div>
+                    <ul>
+                        <li>Led applied research and system development at the intersection of NLP, survey analytics, and social data.</li>
+                        <li>Designed and deployed LLM-based pipelines for text and survey analysis used in active research and product prototyping.</li>
+                        <li>Supervised applied research translating real-world questions into scalable analytical systems.</li>
+                    </ul>
+                </div>
 
-    <div class="job-header">
-        <span class="job-title">Assistant Professor of Computational Social Science</span>
-        <span class="job-date">2025 – Present</span>
-    </div>
-    <div class="job-org">CUHK-Shenzhen</div>
-    <ul>
-        <li>Led applied research and system development at the intersection of NLP, survey analytics, and social data.</li>
-        <li>Designed and deployed LLM-based pipelines for text and survey analysis used in active research and product prototyping.</li>
-        <li>Supervised applied research translating real-world questions into scalable analytical systems.</li>
-    </ul>
+                <div class="timeline-item">
+                    <div class="tl-header">
+                        <span class="tl-title">Founder &amp; Lead Research Scientist</span>
+                        <span class="tl-date">2025 &ndash; Present</span>
+                    </div>
+                    <div class="tl-org">SurveyFluency</div>
+                    <ul>
+                        <li>Founded and led development of an AI-driven survey intelligence platform for rapid, interpretable analysis of complex survey data.</li>
+                        <li>Designed system architecture supporting SPSS and longitudinal survey ingestion, demographic crosstabs, toplines, and visual analytics.</li>
+                        <li>Built natural-language interfaces for structured survey exploration, enabling users to identify subgroup differences and temporal patterns without code.</li>
+                        <li>Applied the platform to large-scale public datasets (e.g., General Social Survey cumulative file) to support early-stage exploratory analysis.</li>
+                        <li>Focused on interpretability, transparency, and researcher-facing workflows for applied social science and policy analysis.</li>
+                    </ul>
+                </div>
 
-    <div class="job-header">
-        <span class="job-title">Founder & Lead Research Scientist</span>
-        <span class="job-date">2025 – Present</span>
-    </div>
-    <div class="job-org">SurveyFluency</div>
-    <ul>
-        <li>Founded and led development of an AI-driven survey intelligence platform for rapid, interpretable analysis of complex survey data.</li>
-        <li>Designed system architecture supporting SPSS and longitudinal survey ingestion, demographic crosstabs, toplines, and visual analytics.</li>
-        <li>Built natural-language interfaces for structured survey exploration, enabling users to identify subgroup differences and temporal patterns without code.</li>
-        <li>Applied the platform to large-scale public datasets (e.g., General Social Survey cumulative file) to support early-stage exploratory analysis.</li>
-        <li>Focused on interpretability, transparency, and researcher-facing workflows for applied social science and policy analysis.</li>
-    </ul>
+                <div class="timeline-item">
+                    <div class="tl-header">
+                        <span class="tl-title">Data &amp; Policy Analyst</span>
+                        <span class="tl-date">June &ndash; Sept. 2023</span>
+                    </div>
+                    <div class="tl-org">Committee of 100 (Remote)</div>
+                    <ul>
+                        <li>Created interactive geospatial dashboards visualizing property restriction laws and policy changes across U.S. states and cities.</li>
+                        <li>Built an end-to-end data pipeline from legislative data ingestion and cleaning to mapping-ready outputs and stakeholder-ready visual deliverables.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="job-header">
-        <span class="job-title">Data & Policy Analyst</span>
-        <span class="job-date">June – Sept. 2023</span>
-    </div>
-    <div class="job-org">Committee of 100 (Remote)</div>
-    <ul>
-        <li>Created interactive geospatial dashboards visualizing property restriction laws and policy changes across U.S. states and cities.</li>
-        <li>Built an end-to-end data pipeline from legislative data ingestion and cleaning to mapping-ready outputs and stakeholder-ready visual deliverables.</li>
-    </ul>
+    <!-- ========== PROJECTS ========== -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-heading reveal">Selected Applied Research Projects</h2>
 
-    <h2>Selected Applied Research Projects</h2>
+            <div class="project-item reveal" data-delay="100">
+                <div class="proj-header">
+                    <span class="proj-title">SurveyFluency: AI System for Survey Intelligence</span>
+                    <span class="proj-date">2024 &ndash; Present</span>
+                </div>
+                <p class="proj-tech">LLMs, NLP, Structured Data Reasoning</p>
+                <ul>
+                    <li>Developed LLM-based pipelines for analyzing structured survey data, including topline generation, demographic crosstabs, and pattern discovery.</li>
+                    <li>Implemented natural-language querying over tabular survey data to support hypothesis-free exploration and rapid insight generation.</li>
+                    <li>Evaluated system outputs using real-world datasets (e.g., General Social Survey) to assess robustness across survey waves and subpopulations.</li>
+                    <li>Designed outputs to prioritize human interpretation, transparency, and researcher trust rather than automated decision-making.</li>
+                </ul>
+            </div>
 
-    <div class="project-header">
-        <span class="project-title">SurveyFluency: AI System for Survey Intelligence</span>
-        <span class="job-date">2024 – Present</span>
-    </div>
-    <div class="project-tech">LLMs, NLP, Structured Data Reasoning</div>
-    <ul>
-        <li>Developed LLM-based pipelines for analyzing structured survey data, including topline generation, demographic crosstabs, and pattern discovery.</li>
-        <li>Implemented natural-language querying over tabular survey data to support hypothesis-free exploration and rapid insight generation.</li>
-        <li>Evaluated system outputs using real-world datasets (e.g., General Social Survey) to assess robustness across survey waves and subpopulations.</li>
-        <li>Designed outputs to prioritize human interpretation, transparency, and researcher trust rather than automated decision-making.</li>
-    </ul>
+            <div class="project-item reveal" data-delay="200">
+                <div class="proj-header">
+                    <span class="proj-title">PoliPrompt: LLM-Based NLP Classification Toolkit</span>
+                    <span class="proj-date">Jun &ndash; Sep 2024</span>
+                </div>
+                <p class="proj-tech">Prompt Optimization, Transformers, PyTorch, Open Source</p>
+                <ul>
+                    <li>Developed a modular classification pipeline with prompt optimization and exemplar retrieval, achieving substantial accuracy gains with lower inference cost.</li>
+                    <li>Integrated Hugging Face Transformers and PyTorch for scalable training and evaluation across large text corpora.</li>
+                    <li>Released as an open-source PyPI package.</li>
+                </ul>
+            </div>
 
-    <div class="project-header">
-        <span class="project-title">PoliPrompt: LLM-Based NLP Classification Toolkit</span>
-        <span class="job-date">Jun – Sep 2024</span>
-    </div>
-    <div class="project-tech">Prompt Optimization, Transformers, PyTorch, Open Source</div>
-    <ul>
-        <li>Developed a modular classification pipeline with prompt optimization and exemplar retrieval, achieving substantial accuracy gains with lower inference cost.</li>
-        <li>Integrated Hugging Face Transformers and PyTorch for scalable training and evaluation across large text corpora.</li>
-        <li>Released as an open-source PyPI package.</li>
-    </ul>
+            <div class="project-item reveal" data-delay="300">
+                <div class="proj-header">
+                    <span class="proj-title">LLM-Based Analysis of Survey Open-Ended Responses</span>
+                    <span class="proj-date">May 2025 &ndash; Present</span>
+                </div>
+                <p class="proj-tech">Prompting, Topic Modeling, Interpretability</p>
+                <ul>
+                    <li>Built pipelines analyzing 50,000+ open-ended responses for effort, emotion, moral content, and ideological stance using multiple prompting strategies.</li>
+                    <li>Applied topic modeling and clustering to extract latent dimensions related to ambivalence, cross-pressure, and cognitive complexity.</li>
+                    <li>Validated outputs against human-coded benchmarks to ensure measurement reliability and interpretability.</li>
+                </ul>
+            </div>
 
-    <div class="project-header">
-        <span class="project-title">LLM-Based Analysis of Survey Open-Ended Responses</span>
-        <span class="job-date">May 2025 – Present</span>
-    </div>
-    <div class="project-tech">Prompting, Topic Modeling, Interpretability</div>
-    <ul>
-        <li>Built pipelines analyzing 50,000+ open-ended responses for effort, emotion, moral content, and ideological stance using multiple prompting strategies.</li>
-        <li>Applied topic modeling and clustering to extract latent dimensions related to ambivalence, cross-pressure, and cognitive complexity.</li>
-        <li>Validated outputs against human-coded benchmarks to ensure measurement reliability and interpretability.</li>
-    </ul>
+            <div class="project-item reveal" data-delay="400">
+                <div class="proj-header">
+                    <span class="proj-title">Data Processing for Housing Policy Debates</span>
+                    <span class="proj-date">June 2025 &ndash; Present</span>
+                </div>
+                <p class="proj-tech">ASR, Diarization, NLP Pipelines, CI/CD</p>
+                <ul>
+                    <li>Automated transcription and speaker diarization for 500+ hours of local government meeting audio; built reproducible pipelines for extraction and analysis.</li>
+                    <li>Developed CI/CD-ready processing workflows for cleaning, feature extraction, and downstream NLP tasks, reducing manual processing time substantially.</li>
+                    <li>Produced structured quantitative measures of policy discourse for non-technical research partners and decision-makers.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-    <div class="project-header">
-        <span class="project-title">Data Processing for Housing Policy Debates</span>
-        <span class="job-date">June 2025 – Present</span>
-    </div>
-    <div class="project-tech">ASR, Diarization, NLP Pipelines, CI/CD</div>
-    <ul>
-        <li>Automated transcription and speaker diarization for 500+ hours of local government meeting audio; built reproducible pipelines for extraction and analysis.</li>
-        <li>Developed CI/CD-ready processing workflows for cleaning, feature extraction, and downstream NLP tasks, reducing manual processing time substantially.</li>
-        <li>Produced structured quantitative measures of policy discourse for non-technical research partners and decision-makers.</li>
-    </ul>
+    <!-- ========== SKILLS ========== -->
+    <section class="section section--alt">
+        <div class="container">
+            <h2 class="section-heading reveal">Technical Skills</h2>
+            <div class="skills-grid reveal" data-delay="100">
+                <div class="skill-card">
+                    <h4>Programming</h4>
+                    <p>Python, R, SQL, Stata</p>
+                </div>
+                <div class="skill-card">
+                    <h4>NLP / ML Libraries</h4>
+                    <p>Hugging Face Transformers, PyTorch, scikit-learn, SpaCy, NLTK, Gensim, TensorFlow</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Data &amp; Model Management</h4>
+                    <p>DVC, Git, Weights &amp; Biases, MLflow</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Cloud / Deployment</h4>
+                    <p>AWS (EC2/S3), CI/CD workflows</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Methods</h4>
+                    <p>Causal inference, clustering, regression modeling, survey analysis</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <h2>Technical Skills</h2>
-    <div class="skills-section">
-        <span class="skill-category">Programming:</span>
-        <span>Python, R, SQL, Stata</span>
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Menglin Liu</h4>
+                <p>Assistant Professor of Computational Social Science at CUHK-Shenzhen. Research at the intersection of NLP, political science, and urban governance.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                    <li><a href="CV.html">CV</a></li>
+                    <li><a href="Poliprompt_Package.html">PoliPrompt</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>
+                    Email: <a href="mailto:menglinliu@cuhk.edu.cn">menglinliu@cuhk.edu.cn</a><br>
+                    The Chinese University of Hong Kong, Shenzhen<br>
+                    School of AI
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Menglin (Miley) Liu. All rights reserved.
+        </div>
+    </footer>
 
-        <span class="skill-category">NLP / ML Libraries:</span>
-        <span>Hugging Face Transformers, PyTorch, scikit-learn, SpaCy, NLTK, Gensim, TensorFlow</span>
-
-        <span class="skill-category">Data & Model Management:</span>
-        <span>DVC, Git, Weights & Biases, MLflow</span>
-
-        <span class="skill-category">Cloud / Deployment:</span>
-        <span>AWS (EC2/S3), CI/CD workflows</span>
-
-        <span class="skill-category">Other:</span>
-        <span>Causal inference, clustering, regression modeling, survey analysis</span>
-    </div>
-
+    <script src="js/main.js"></script>
 </body>
 </html>

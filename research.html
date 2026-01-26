@@ -3,250 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research - Menglin (Miley) Liu</title>
+    <title>Research | Menglin Liu</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            background-color: #f7fafc;
-            color: #2d3748;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-            line-height: 1.7;
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 40px 30px;
-        }
-
-        nav {
-            margin-bottom: 40px;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        nav ul li {
-            display: inline-block;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #2d3748;
-            font-weight: 500;
-            font-size: 1em;
-            padding: 8px 20px;
-            background-color: #f7fafc;
-            border: 1.5px solid #cbd5e0;
-            border-radius: 8px;
-            transition: all 0.2s ease;
-            display: inline-block;
-        }
-
-        nav ul li a:hover {
-            background-color: #2b6cb0;
-            color: #ffffff;
-            border-color: #2b6cb0;
-            transform: translateY(-1px);
-        }
-
-        h1 {
-            color: #1a202c;
-            font-size: 2.5em;
-            font-weight: 700;
-            margin-bottom: 20px;
-            letter-spacing: -0.02em;
-            border-bottom: 3px solid #2b6cb0;
-            padding-bottom: 12px;
-        }
-
-        h2 {
-            color: #2b6cb0;
-            font-size: 1.8em;
-            font-weight: 600;
-            margin-top: 50px;
-            margin-bottom: 25px;
-            border-bottom: 2px solid #e2e8f0;
-            padding-bottom: 8px;
-        }
-
-        p {
-            color: #4a5568;
-            line-height: 1.8;
-            margin-bottom: 20px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        ul li {
-            background-color: #ffffff;
-            margin-bottom: 30px;
-            padding: 28px;
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.03);
-            border-left: 4px solid #2b6cb0;
-        }
-
-        ul li a {
-            color: #2b6cb0;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.15em;
-            line-height: 1.5;
-            transition: color 0.2s ease;
-        }
-
-        ul li a:hover {
-            color: #2c5282;
-            text-decoration: underline;
-        }
-
-        ul li em {
-            color: #718096;
-            font-family: 'Inter', sans-serif;
-            font-style: normal;
-            font-size: 0.95em;
-            display: block;
-            margin-top: 6px;
-        }
-
-        .abstract {
-            margin-top: 16px;
-            font-size: 0.95em;
-            color: #4a5568;
-            line-height: 1.8;
-            padding-top: 12px;
-            border-top: 1px solid #e2e8f0;
-        }
-
-        .abstract strong {
-            color: #2d3748;
-            font-weight: 600;
-        }
-
-        .abstract i, .abstract em {
-            font-family: 'Merriweather', Georgia, serif;
-            font-style: italic;
-            color: #4a5568;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                padding: 20px 15px;
-            }
-
-            h1 {
-                font-size: 2em;
-            }
-
-            h2 {
-                font-size: 1.5em;
-            }
-
-            ul li {
-                padding: 20px;
-            }
-
-            nav ul {
-                flex-direction: column;
-            }
-
-            nav ul li a {
-                display: block;
-                width: 100%;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Main Page</a></li>
-            <li><a href="cv.html">Curriculum Vitae</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="teaching.html">Teaching</a></li>
-        </ul>
-    </nav>
 
-    <h1>Research</h1>
-    <p>Below are some of my key research papers and projects:</p>
+    <!-- ========== HEADER ========== -->
+    <header class="site-header">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">Menglin<span class="dot">.</span>Liu</a>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html" class="active">Research</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="CV.html">CV</a></li>
+                <li><a href="Poliprompt_Package.html">PoliPrompt</a></li>
+            </ul>
+        </div>
+    </header>
 
-    <!-- Section for Large Language Models and Data Mining -->
-    <h2>Large Language Models and Data Mining</h2>
-    <ul>
-        <li>
-            <a href="Liu_Shi_PoliPrompt.pdf" target="_blank">
-                PoliPrompt: A High-Performance Cost-Effective LLM-Based Text Classification Framework for Political Science
-            </a><br>
-            <em>with Ge Shi (<a href="https://geshijoker.github.io/" target="_blank">website</a>)</em>
-            <p class="abstract">
-                <strong>Abstract:</strong> Recent advancements in large language models (LLMs) have opened new possibilities for text classification in political science, but their effectiveness and accuracy depends on prompt quality and exemplar selection in few-shot learning. To address these challenges, we introduce a three-stage in-context learning approach that improves classification accuracy through <i>automatic prompt optimization</i> and <i>dynamic exemplar selection</i>. Our method automates the generation of optimized, task-specific prompts by analyzing a pool of diverse exemplars, summarizing labeling rules, and refining prompts based on the LLM's interpretation. We also use the Maximal Marginal Relevance (MMR) algorithm to dynamically select the most relevant exemplars during inference, balancing relevance to the query text with diversity among the selected examples. Additionally, we incorporate a consensus mechanism that refines outputs from two weaker LLMs using a more advanced model to improve accuracy, reliability, and speed while reducing computational costs. We extensively tested our method across diverse classification tasks, including categorizing lengthy BBC news reports by topic, analyzing public opinion on Brett Kavanaugh's Supreme Court confirmation using Twitter data, and assessing the tone of campaign ads from the 2018 election. The experimental results show how our approach effectively overcomes key limitations of using LLMs for text classification. A free Python software package implementing this method is available on GitHub.
-            </p>
-            <!-- Link to the PoliPrompt package -->
-            <p>
-                <a href="Poliprompt_Package.html" target="_blank">Learn more about the PoliPrompt Package</a>
-            </p>
-        </li>
-        
-    <!-- Section for Substantive Research -->
-<h2>Substantive Research</h2>
-<ul>
-    <li>
-        <a href="https://www.tandfonline.com/doi/full/10.1080/03003930.2025.2517102?src=" target="_blank">
-          The Varied Impact of Direct Democracy on Local Housing Policies: Unraveling the Role of Socioeconomic Context
-        </a><br>
-        <em>by Menglin (Miley) Liu</em>
-        <p class="abstract">
-          <strong>Abstract:</strong> Local opposition to high‑density residential construction is a major contributor to the housing crisis in the United States. The lack of affordable housing has wide‑reaching implications for local economic performance, social challenges like homelessness and food insecurity, and income inequality. Amid this housing struggle, this study delves into the role of direct democracy in affecting local land use policies in nearly 1,000 U.S. cities between 2006 and 2018. Although direct democracy is arising as a common solution for local land use disputes, its actual implications on housing policies remained unexplored. This study, using matching and difference‑in‑differences design, provides robust evidence that cities adopting direct democracy are more inclined to impose stringent land use policies, often favoring established anti‑growth interests in the city. This study further reveals that, in high‑income cities, the effect of direct democracy remains constant, irrespective of the homeowner and renter power dynamics. However, in lower‑income cities, the effect of direct democracy becomes more pronounced, underlining significant changes based on the power balance of homeowners and renters. These findings shed light on how political institutions could affect public policies, and how varying socioeconomic contexts could shape democratic processes in city development.
-          <br><br>
-          <strong>Published:</strong> 2025 in *Local Government Studies*—<a href="https://www.tandfonline.com/doi/full/10.1080/03003930.2025.2517102?src=" target="_blank">View Journal Page / DOI</a>
-        </p>
-      </li>
-      
+    <!-- ========== PAGE BANNER ========== -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Research</h1>
+            <p>Selected papers and projects in NLP, political science, and urban governance.</p>
+        </div>
+    </section>
 
-    <li>
-        <strong>An Open-Ended Pandemic? Political and Behavioral Divisions During the Pandemic</strong><br>
-        <em>with Joshua D. Clinton</em>
-        <p class="abstract">
-            <strong>Abstract:</strong> What are the effects—and how can researchers identify and interpret the effects—of cross-cutting social divisions in mass opinion? The COVID-19 pandemic generated cleavages based on compliance with public health suggestions related to masking and vaccination that sometimes aligned with partisan identity and sometimes cut across it. But distinguishing ambivalence from survey satisficing when studying the responses of cross-pressured individuals is difficult when relying on traditional, forced-choice survey items. We leverage a survey combining forced-choice and open-ended responses to examine how political identity and behavioral compliance shaped affective and moral judgments of others during the pandemic. Substantively, we show that evaluations of others reflect both partisan alignment and compliance visibility, with especially negative sentiment directed at the non-compliant by the compliant. Methodologically, we demonstrate how the use of human-in-the-loop large language model–assisted coding of open-ended text can uncover latent opinion structure, discern between satisficing and ambivalence, and increase our understanding of cross-pressured individuals. Our results show that even though the responses are noisier, they still retain a coherent underlying schema in ways that suggest internal conflict rather than disengagement. Substantively, our findings advance understanding of how social divisions emerge, and methodologically, our analysis highlights the importance of integrating open- and closed-ended data to measure ambivalence in mass opinion and illustrates a framework for doing such analyses.
-        </p>
-    </li>
+    <!-- ========== LLM & DATA MINING ========== -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-heading reveal">Large Language Models &amp; Data Mining</h2>
 
-    <li>
-        <a href="Liu_Liu_Homeownership_China.pdf" target="_blank">
-            Homeownership and Social Policy Preferences in China: Mediating Roles of Employment Sector and Socioeconomic Perceptions
-        </a>
-        <p class="abstract">
-            <strong>Abstract:</strong> Housing consistently ranks as one of the most significant assets for ordinary citizens in China. Despite its crucial importance, political economists have scarcely explored its impact on citizens' welfare and their demands from the government. This study addresses the critical role of housing, focusing on its heterogeneous impact on social policy preferences among homeowners. Specifically, employing both matching techniques and instrumental variable analysis, our findings indicate that homeownership leads to increased support for policies related to redistribution. We also find that homeownership increases support for redistribution across the board but does so more substantially among employees of state-owned enterprises (SOEs) compared to their private-sector counterparts. Through the application of mediation analysis, this research uncovers how different channels potentially mediate the effect of homeownership on social redistribution attitudes. The findings shed light on the nuanced, heterogeneous effects of housing as an economic asset on the socio-political dynamics of policy support in China, underscoring the importance of contextual factors in understanding the socio-economic implications of homeownership.
-          <br><br>
-          <strong>Accepted:</strong> <em>Cities</em>
-        </p>
-    </li>
+            <div class="research-card reveal" data-delay="100">
+                <h3><a href="Liu_Shi_PoliPrompt.pdf" target="_blank">PoliPrompt: A High-Performance Cost-Effective LLM-Based Text Classification Framework for Political Science</a></h3>
+                <p class="authors">with Ge Shi (<a href="https://geshijoker.github.io/" target="_blank">website</a>)</p>
+                <details>
+                    <summary>Abstract</summary>
+                    <p class="abstract-text">
+                        Recent advancements in large language models (LLMs) have opened new possibilities for text classification in political science, but their effectiveness and accuracy depends on prompt quality and exemplar selection in few-shot learning. To address these challenges, we introduce a three-stage in-context learning approach that improves classification accuracy through <em>automatic prompt optimization</em> and <em>dynamic exemplar selection</em>. Our method automates the generation of optimized, task-specific prompts by analyzing a pool of diverse exemplars, summarizing labeling rules, and refining prompts based on the LLM's interpretation. We also use the Maximal Marginal Relevance (MMR) algorithm to dynamically select the most relevant exemplars during inference, balancing relevance to the query text with diversity among the selected examples. Additionally, we incorporate a consensus mechanism that refines outputs from two weaker LLMs using a more advanced model to improve accuracy, reliability, and speed while reducing computational costs. We extensively tested our method across diverse classification tasks, including categorizing lengthy BBC news reports by topic, analyzing public opinion on Brett Kavanaugh's Supreme Court confirmation using Twitter data, and assessing the tone of campaign ads from the 2018 election. The experimental results show how our approach effectively overcomes key limitations of using LLMs for text classification. A free Python software package implementing this method is available on GitHub.
+                    </p>
+                </details>
+                <a href="Poliprompt_Package.html" class="extra-link">Learn more about the PoliPrompt Package &rarr;</a>
+            </div>
+        </div>
+    </section>
 
-    <li>
-        <strong>Unequal Voices in Urban Development: A Text Analysis of Property Bias in Municipal Government Meetings</strong>
-        <p class="abstract">
-            <strong>Abstract:</strong> Dahl asserted that “political resources, knowledge, skills, and incentives are always and everywhere distributed unequally” (2006). Recently, scholars of political behavior and local politics have paid increasing attention to citizen participation in local government meetings, notably with the planning and zoning board and the municipal council. One notable finding is that renters are consistently less politically active than homeowners (Einstein et al. 2019; Yoder 2020), whose opposition seems to be more associated with NIMBYism (not in my backyard) sentiments against (affordable or) dense housing developments. However, while these studies describe a critical empirical finding in political behavior, we argue that the existing literature has misrepresented the processes of local political engagement by overlooking one key contextual premise of local government meetings: high informational and material barriers to participation, with a strong favor to property. Conducting textual analysis with the LocalView dataset, we show that the formal local institutions are intrinsically biased toward property-owners. Further, we show that even for more privileged homeowners, the playing field is not as leveled considering the high bars of financial investments required in opposing deep-pocketed developers. This evidence contributes to the understanding of grassroots mobilization by marginalized communities, such as tenants, outside of the formal participation processes.
-        </p>
-    </li>
-</ul>
+    <!-- ========== SUBSTANTIVE RESEARCH ========== -->
+    <section class="section section--alt">
+        <div class="container">
+            <h2 class="section-heading reveal">Substantive Research</h2>
 
+            <div class="research-card reveal" data-delay="100">
+                <h3><a href="https://www.tandfonline.com/doi/full/10.1080/03003930.2025.2517102?src=" target="_blank">The Varied Impact of Direct Democracy on Local Housing Policies: Unraveling the Role of Socioeconomic Context</a></h3>
+                <p class="authors">by Menglin (Miley) Liu</p>
+                <span class="journal-badge">Local Government Studies &middot; 2025</span>
+                <details>
+                    <summary>Abstract</summary>
+                    <p class="abstract-text">
+                        Local opposition to high-density residential construction is a major contributor to the housing crisis in the United States. The lack of affordable housing has wide-reaching implications for local economic performance, social challenges like homelessness and food insecurity, and income inequality. Amid this housing struggle, this study delves into the role of direct democracy in affecting local land use policies in nearly 1,000 U.S. cities between 2006 and 2018. Although direct democracy is arising as a common solution for local land use disputes, its actual implications on housing policies remained unexplored. This study, using matching and difference-in-differences design, provides robust evidence that cities adopting direct democracy are more inclined to impose stringent land use policies, often favoring established anti-growth interests in the city. This study further reveals that, in high-income cities, the effect of direct democracy remains constant, irrespective of the homeowner and renter power dynamics. However, in lower-income cities, the effect of direct democracy becomes more pronounced, underlining significant changes based on the power balance of homeowners and renters. These findings shed light on how political institutions could affect public policies, and how varying socioeconomic contexts could shape democratic processes in city development.
+                    </p>
+                </details>
+            </div>
 
-    <p>Click on the links above to view the PDFs of my research papers.</p>
+            <div class="research-card reveal" data-delay="200">
+                <h3>An Open-Ended Pandemic? Political and Behavioral Divisions During the Pandemic</h3>
+                <p class="authors">with Joshua D. Clinton</p>
+                <details>
+                    <summary>Abstract</summary>
+                    <p class="abstract-text">
+                        What are the effects&mdash;and how can researchers identify and interpret the effects&mdash;of cross-cutting social divisions in mass opinion? The COVID-19 pandemic generated cleavages based on compliance with public health suggestions related to masking and vaccination that sometimes aligned with partisan identity and sometimes cut across it. But distinguishing ambivalence from survey satisficing when studying the responses of cross-pressured individuals is difficult when relying on traditional, forced-choice survey items. We leverage a survey combining forced-choice and open-ended responses to examine how political identity and behavioral compliance shaped affective and moral judgments of others during the pandemic. Substantively, we show that evaluations of others reflect both partisan alignment and compliance visibility, with especially negative sentiment directed at the non-compliant by the compliant. Methodologically, we demonstrate how the use of human-in-the-loop large language model&ndash;assisted coding of open-ended text can uncover latent opinion structure, discern between satisficing and ambivalence, and increase our understanding of cross-pressured individuals. Our results show that even though the responses are noisier, they still retain a coherent underlying schema in ways that suggest internal conflict rather than disengagement. Substantively, our findings advance understanding of how social divisions emerge, and methodologically, our analysis highlights the importance of integrating open- and closed-ended data to measure ambivalence in mass opinion and illustrates a framework for doing such analyses.
+                    </p>
+                </details>
+            </div>
+
+            <div class="research-card reveal" data-delay="300">
+                <h3><a href="Liu_Liu_Homeownership_China.pdf" target="_blank">Homeownership and Social Policy Preferences in China: Mediating Roles of Employment Sector and Socioeconomic Perceptions</a></h3>
+                <span class="journal-badge">Cities &middot; Accepted</span>
+                <details>
+                    <summary>Abstract</summary>
+                    <p class="abstract-text">
+                        Housing consistently ranks as one of the most significant assets for ordinary citizens in China. Despite its crucial importance, political economists have scarcely explored its impact on citizens' welfare and their demands from the government. This study addresses the critical role of housing, focusing on its heterogeneous impact on social policy preferences among homeowners. Specifically, employing both matching techniques and instrumental variable analysis, our findings indicate that homeownership leads to increased support for policies related to redistribution. We also find that homeownership increases support for redistribution across the board but does so more substantially among employees of state-owned enterprises (SOEs) compared to their private-sector counterparts. Through the application of mediation analysis, this research uncovers how different channels potentially mediate the effect of homeownership on social redistribution attitudes. The findings shed light on the nuanced, heterogeneous effects of housing as an economic asset on the socio-political dynamics of policy support in China, underscoring the importance of contextual factors in understanding the socio-economic implications of homeownership.
+                    </p>
+                </details>
+            </div>
+
+            <div class="research-card reveal" data-delay="400">
+                <h3>Unequal Voices in Urban Development: A Text Analysis of Property Bias in Municipal Government Meetings</h3>
+                <details>
+                    <summary>Abstract</summary>
+                    <p class="abstract-text">
+                        Dahl asserted that "political resources, knowledge, skills, and incentives are always and everywhere distributed unequally" (2006). Recently, scholars of political behavior and local politics have paid increasing attention to citizen participation in local government meetings, notably with the planning and zoning board and the municipal council. One notable finding is that renters are consistently less politically active than homeowners (Einstein et al. 2019; Yoder 2020), whose opposition seems to be more associated with NIMBYism (not in my backyard) sentiments against (affordable or) dense housing developments. However, while these studies describe a critical empirical finding in political behavior, we argue that the existing literature has misrepresented the processes of local political engagement by overlooking one key contextual premise of local government meetings: high informational and material barriers to participation, with a strong favor to property. Conducting textual analysis with the LocalView dataset, we show that the formal local institutions are intrinsically biased toward property-owners. Further, we show that even for more privileged homeowners, the playing field is not as leveled considering the high bars of financial investments required in opposing deep-pocketed developers. This evidence contributes to the understanding of grassroots mobilization by marginalized communities, such as tenants, outside of the formal participation processes.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Menglin Liu</h4>
+                <p>Assistant Professor of Computational Social Science at CUHK-Shenzhen. Research at the intersection of NLP, political science, and urban governance.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                    <li><a href="CV.html">CV</a></li>
+                    <li><a href="Poliprompt_Package.html">PoliPrompt</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>
+                    Email: <a href="mailto:menglinliu@cuhk.edu.cn">menglinliu@cuhk.edu.cn</a><br>
+                    The Chinese University of Hong Kong, Shenzhen<br>
+                    School of AI
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Menglin (Miley) Liu. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

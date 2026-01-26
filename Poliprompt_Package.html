@@ -3,121 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PoliPrompt Package</title>
+    <title>PoliPrompt | Menglin Liu</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-            line-height: 1.7;
-            color: #2d3748;
-            background-color: #f7fafc;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 60px 30px;
-        }
-
-        h1 {
-            color: #1a202c;
-            font-size: 2.5em;
-            font-weight: 700;
-            margin-bottom: 20px;
-            letter-spacing: -0.02em;
-            border-bottom: 3px solid #2b6cb0;
-            padding-bottom: 12px;
-        }
-
-        p {
-            font-size: 1.05em;
-            margin-bottom: 1.5em;
-            color: #4a5568;
-            line-height: 1.8;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 30px 0;
-        }
-
-        ul li {
-            background-color: #ffffff;
-            margin-bottom: 20px;
-            padding: 24px;
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.03);
-            border-left: 4px solid #2b6cb0;
-        }
-
-        ul li strong {
-            color: #1a202c;
-            font-size: 1.15em;
-            font-weight: 600;
-            display: block;
-            margin-bottom: 8px;
-        }
-
-        a {
-            color: #2b6cb0;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.2s ease;
-        }
-
-        a:hover {
-            color: #2c5282;
-            text-decoration: underline;
-        }
-
-        /* Logo styling */
-        .logo {
-            max-width: 180px;
-            height: auto;
-            margin-bottom: 30px;
-            border-radius: 8px;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                padding: 40px 15px;
-            }
-
-            h1 {
-                font-size: 2em;
-            }
-
-            ul li {
-                padding: 20px;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- PoliPrompt logo -->
-    <img src="PoliPrompt_logo.png" alt="PoliPrompt Logo" class="logo">
+    <!-- ========== HEADER ========== -->
+    <header class="site-header">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">Menglin<span class="dot">.</span>Liu</a>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="CV.html">CV</a></li>
+                <li><a href="Poliprompt_Package.html" class="active">PoliPrompt</a></li>
+            </ul>
+        </div>
+    </header>
 
-    <h1>PoliPrompt Package</h1>
-    <p>Here you can find the code and a Python software package I have developed to support my research:</p>
+    <!-- ========== PAGE BANNER ========== -->
+    <section class="page-banner">
+        <div class="container">
+            <img src="PoliPrompt_logo.png" alt="PoliPrompt Logo" class="banner-logo">
+            <h1>PoliPrompt Package</h1>
+            <p>A high-performance LLM-based text classification framework designed for political science research.</p>
+        </div>
+    </section>
 
-    <ul>
-        <li>
-            <strong>PoliPrompt:</strong> A high-performance LLM-based text classification framework designed for political science research.
-            <a href="https://pypi.org/project/PoliPrompt/">[Package Link]</a> |
-            <a href="https://github.com/geshijoker/PoliPrompt">[GitHub Repository]</a>
-        </li>
-        
-        <li>
-            <strong>PoliPrompt Tutorial:</strong> A guide for using PoliPrompt, currently under development.
-            <a href="https://poliprompt-tutorial.readthedocs.io/en/latest/">[Tutorial Link]</a>
-        </li>
-    </ul>
+    <!-- ========== FEATURES ========== -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-heading reveal">Resources</h2>
+            <p class="section-sub reveal" data-delay="50">Explore the code, documentation, and tutorials for the PoliPrompt package.</p>
 
-    <p>Feel free to explore these resources and contact me at mliliu@ucdavis.edu if you have any questions or need further information.</p>
+            <div class="feature-grid">
+                <div class="feature-card reveal" data-delay="100">
+                    <h3>Python Package</h3>
+                    <p>Install PoliPrompt directly from PyPI to integrate LLM-based text classification into your research workflow with automatic prompt optimization and dynamic exemplar selection.</p>
+                    <a href="https://pypi.org/project/PoliPrompt/" target="_blank" class="btn btn-gold">View on PyPI</a>
+                </div>
+                <div class="feature-card reveal" data-delay="200">
+                    <h3>GitHub Repository</h3>
+                    <p>Access the full source code, contribute to development, and explore the implementation of the three-stage in-context learning approach and MMR-based exemplar retrieval.</p>
+                    <a href="https://github.com/geshijoker/PoliPrompt" target="_blank" class="btn btn-gold">View on GitHub</a>
+                </div>
+                <div class="feature-card reveal" data-delay="300">
+                    <h3>Tutorial &amp; Documentation</h3>
+                    <p>Follow step-by-step guides for setting up PoliPrompt, running classification tasks, and customizing prompts for your specific political text analysis needs.</p>
+                    <a href="https://poliprompt-tutorial.readthedocs.io/en/latest/" target="_blank" class="btn btn-gold">Read the Docs</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <p><a href="index.html">Back to Home</a></p>
+    <!-- ========== ABOUT THE PAPER ========== -->
+    <section class="section section--alt">
+        <div class="container">
+            <h2 class="section-heading reveal">About the Research</h2>
+            <div class="research-card reveal" data-delay="100">
+                <h3><a href="Liu_Shi_PoliPrompt.pdf" target="_blank">PoliPrompt: A High-Performance Cost-Effective LLM-Based Text Classification Framework for Political Science</a></h3>
+                <p class="authors">with Ge Shi (<a href="https://geshijoker.github.io/" target="_blank">website</a>)</p>
+                <details>
+                    <summary>Abstract</summary>
+                    <p class="abstract-text">
+                        Recent advancements in large language models (LLMs) have opened new possibilities for text classification in political science, but their effectiveness and accuracy depends on prompt quality and exemplar selection in few-shot learning. To address these challenges, we introduce a three-stage in-context learning approach that improves classification accuracy through <em>automatic prompt optimization</em> and <em>dynamic exemplar selection</em>. Our method automates the generation of optimized, task-specific prompts by analyzing a pool of diverse exemplars, summarizing labeling rules, and refining prompts based on the LLM's interpretation. We also use the Maximal Marginal Relevance (MMR) algorithm to dynamically select the most relevant exemplars during inference, balancing relevance to the query text with diversity among the selected examples. Additionally, we incorporate a consensus mechanism that refines outputs from two weaker LLMs using a more advanced model to improve accuracy, reliability, and speed while reducing computational costs. We extensively tested our method across diverse classification tasks, including categorizing lengthy BBC news reports by topic, analyzing public opinion on Brett Kavanaugh's Supreme Court confirmation using Twitter data, and assessing the tone of campaign ads from the 2018 election. The experimental results show how our approach effectively overcomes key limitations of using LLMs for text classification. A free Python software package implementing this method is available on GitHub.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Menglin Liu</h4>
+                <p>Assistant Professor of Computational Social Science at CUHK-Shenzhen. Research at the intersection of NLP, political science, and urban governance.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                    <li><a href="CV.html">CV</a></li>
+                    <li><a href="Poliprompt_Package.html">PoliPrompt</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>
+                    Email: <a href="mailto:menglinliu@cuhk.edu.cn">menglinliu@cuhk.edu.cn</a><br>
+                    The Chinese University of Hong Kong, Shenzhen<br>
+                    School of AI
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Menglin (Miley) Liu. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
-
